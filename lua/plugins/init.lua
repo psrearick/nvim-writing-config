@@ -18,8 +18,11 @@ require('lazy').setup({
   { import = 'plugins.ui' },
   { import = 'plugins.which-key' },
   { import = 'plugins.editor' },
+  { import = 'plugins.autopairs' },
+  { import = 'plugins.neo-tree' },
   { import = 'plugins.coding' },
-  { import = 'gitsigns-keymap' },
+  { import = 'plugins.gitsigns-keymap' },
+--   { import = 'plugins.lint' },
   { import = 'plugins.lsp' },
 }, {
   ui = {
