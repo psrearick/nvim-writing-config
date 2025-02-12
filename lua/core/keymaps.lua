@@ -20,3 +20,8 @@ keymap('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to left window' })
 keymap('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to right window' })
 keymap('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to lower window' })
 keymap('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to upper window' })
+
+-- Buffer navigation keymaps
+keymap('n', '<Tab>', ':bnext<CR>', { desc = 'Next buffer' })
+keymap('n', '<S-Tab>', ':bprevious<CR>', { desc = 'Previous buffer' })
+keymap('n', '<leader>x', ':bd<CR>', { desc = 'Close buffer' })

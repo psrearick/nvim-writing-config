@@ -37,6 +37,10 @@ opt.breakindent = true    -- Maintain indent when wrapping
 g.have_nerd_font = true   -- Enable if using a Nerd Font
 opt.mouse = 'a'           -- Enable mouse support
 
+-- Set up some buffer behavior
+vim.opt.hidden = true                  -- Allow switching from unsaved buffer
+vim.opt.swapfile = false              -- Don't create swap files
+
 -- Schedule clipboard setup for better startup time
 vim.schedule(function()
   opt.clipboard = 'unnamedplus'
