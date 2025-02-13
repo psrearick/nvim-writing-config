@@ -15,15 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  { import = 'plugins.which-key' },
-  { import = 'plugins.ui' },
-  { import = 'plugins.editor' },
-  { import = 'plugins.autopairs' },
-  { import = 'plugins.neo-tree' },
-  { import = 'plugins.coding' },
-  { import = 'plugins.gitsigns-keymap' },
---   { import = 'plugins.lint' },
-  { import = 'plugins.lsp' },
+  { import = 'plugins' },
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
