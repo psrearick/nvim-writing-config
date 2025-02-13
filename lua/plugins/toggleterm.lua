@@ -7,10 +7,11 @@ return {
       optional = true,
       opts = {
         defaults = {
-          ["<leader>tt"] = { name = "+terminal" },
+          -- ["<leader>t"] = { name = "+terminal" },
         },
       },
   },
+  keys = { { "<leader>tt", "<cmd>ToggleTerm<cr>", desc = "Toggle Terminal" } },
   version = "*",
   config = true
 }
